@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202124;
+    font-family: sans-serif;
+    color: white;
+}
+
+nav {
+    padding: 20px 0;
+    background-color: #202124;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: fit-content;
+    min-height: 40px;
+    max-height: fit-content;
+
+}
+
+nav > * {
+    margin: auto 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+nav a svg {
+    padding: 5px;
+    fill: white;
+    max-width: 37px;
+    min-height: 37px;
+}
+
+nav > a svg:hover {
+    border-radius: 50%;
+    background-color: rgba(118, 118, 118, .5)
+}
+
+nav img {
+    border-radius: 50%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+main img {
+    margin: 5% auto;
+}
+
+.searchbar, .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar {
+    margin: 0 auto;
+    border: 1px rgb(118, 118, 118) solid;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+}
+
+.searchbar svg {
+    margin: 5px;
+    fill: #9aa0a6;
+    width: 32px;
+}
+
+
+
+.searchbar[type="text"] {
+    font-size: medium;
+    border: rgba(0, 0, 0, 0);
+    height: inherit;
+    width: 500px;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 20px;
+}
+
+.searchbar:focus{
+    outline: none;
+}
+
+.searchbar:hover{
+    background-color:rgb(118, 118, 118)
+}
+
+.btns {
+    margin: 20px auto;
+}
+
+.btns input {
+    font-size: medium;
+    margin: 0 10px; 
+    padding: 0 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #303134;
+    height: 36px;
+    width: fit-content;
+}
+
+.btns input:hover {
+    background-color: rgba(48, 49, 52, 0.5)
+}
+
+main p {
+    margin: 0 auto;
+}
+
+main p a {
+    margin-right: 10px;
+    color: greenyellow
+}
+
+footer {  
+    color: #9aa0a6;
+    background-color: #171717;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer .footer-top {
+    display: flex;
+    height: 50px;
+    padding-left: 15px;
+    align-items: center;
+    border-bottom: 1px solid #3c4043;
+}
+
+footer .footer-foot {
+    max-height: fit-content;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a {
+    padding: 15px;
+    color: #9aa0a6;
+}
+
+footer div div {
+    display: flex;
+    justify-content: space-evenly;
+
+}
